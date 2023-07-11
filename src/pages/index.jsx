@@ -1,7 +1,8 @@
 import React from "react";
+import HomePage from "@Modules/home";
 
-const HomePage = () => {
-  return <h2>RBK Toolkit</h2>;
+const Home = () => {
+  return <HomePage />;
 };
 
-export default HomePage;
+export default Home;
