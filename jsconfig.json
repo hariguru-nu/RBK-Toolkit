@@ -12,17 +12,11 @@
     "moduleResolution": "node",
     "baseUrl": "./src",
     "paths": {
-      "@Api/*": ["api/*"],
       "@Assets/*": ["assets/*"],
       "@Components/*": ["components/*"],
-      "@Constants/*": ["constants/*"],
-      "@Config/*": ["config/*"],
-      "@Mocks/*": ["__mocks__/*"],
       "@Modules/*": ["modules/*"],
-      "@Graphql/*": ["graphql/*"],
       "@Pages/*": ["pages/*"],
       "@Redux/*": ["redux/*"],
-      "@Styles/*": ["assets/styles/*"]
     },
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
