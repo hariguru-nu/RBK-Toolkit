@@ -1,0 +1,93 @@
+// {
+//   "root": true,
+//   "extends": ["next/core-web-vitals"],
+//   "plugins": ["simple-import-sort", "prettier"],
+//   "overrides": [
+//     {
+//       "files": ["*.js", "*.jsx"],
+//       "rules": {
+//         "prettier/prettier": "error",
+//         "indent": [
+//           "error",
+//           2,
+//           {
+//             "SwitchCase": 1
+//           }
+//         ],
+//         "import/no-anonymous-default-export": ["error", {
+//           "allowArray": false,
+//           "allowArrowFunction": false,
+//           "allowAnonymousClass": false,
+//           "allowAnonymousFunction": false,
+//           "allowCallExpression": true, // The true value here is for backward compatibility
+//           "allowLiteral": false,
+//           "allowObject": true
+//         }],
+//         "linebreak-style": "off",
+//         "quotes": ["error", "double"],
+//         "semi": ["error", "always"],
+//         "no-console": [0],
+//         "no-unused-vars": [2],
+//         "max-len": [
+//           "error",
+//           {
+//             "code": 100,
+//             "tabWidth": 2,
+//             "comments": 120,
+//             "ignoreUrls": true,
+//             "ignoreTemplateLiterals": true,
+//             "ignoreStrings": true,
+//             "ignoreRegExpLiterals": true
+//           }
+//         ],
+//         "object-curly-spacing": ["error", "always"],
+//         "no-multiple-empty-lines": [
+//           "error",
+//           {
+//             "max": 1,
+//             "maxEOF": 1
+//           }
+//         ],
+//         "prefer-arrow-callback": "off",
+//         "arrow-body-style": "off",
+//         "arrow-spacing": [
+//           "error",
+//           {
+//             "before": true,
+//             "after": true
+//           }
+//         ],
+//         "keyword-spacing": [
+//           "error",
+//           {
+//             "before": true,
+//             "after": true
+//           }
+//         ],
+//         "no-shadow": "off",
+//         "no-undef": "off",
+//         "simple-import-sort/imports": [
+//           "error",
+//           {
+//             "groups": [
+//               [
+//                 "^react",
+//                 "^\\w",
+//                 "^@?\\w",
+//                 "^(@Components)(/.*|$)",
+//                 "^(@[A-Z]\\w*)(/.*|$)",
+//                 "^\\u0000",
+//                 "^\\.\\.(?!/?$)",
+//                 "^\\.\\./?$",
+//                 "^\\./(?=.*/)(?!/?$)",
+//                 "^\\.(?!/?$)",
+//                 "^\\./?$"
+//               ]
+//             ]
+//           }
+//         ],
+//         "simple-import-sort/exports": "error"
+//       }
+//     }
+//   ]
+// }

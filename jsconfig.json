@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "@Api/*": ["api/*"],
+      "@Assets/*": ["assets/*"],
+      "@Components/*": ["components/*"],
+      "@Constants/*": ["constants/*"],
+      "@Config/*": ["config/*"],
+      "@Mocks/*": ["__mocks__/*"],
+      "@Modules/*": ["modules/*"],
+      "@Graphql/*": ["graphql/*"],
+      "@Pages/*": ["pages/*"],
+      "@Redux/*": ["redux/*"],
+      "@Styles/*": ["assets/styles/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["**/*.js", "**/*.jsx", "src/pages/_app.jsx", "src/pages/api/hello.js", ".prettierrc.js"],
+  "exclude": ["node_modules"]
+}

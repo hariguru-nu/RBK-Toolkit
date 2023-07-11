@@ -1,0 +1,55 @@
+service: ado-frontend-next
+ 
+provider:
+ name: aws
+ runtime: nodejs14.x
+ memorySize: 1536
+ stage: ${opt:stage, 'dev'}
+ apiGateway:
+    binaryMediaTypes:
+      - '*/*'
+ deploymentBucket:
+    name: ${self:custom.s3BucketName}
+    maxPreviousDeploymentArtifacts: 3
+ 
+custom:
+  serverless-offline:
+    noPrependStageInUrl: true
+  s3BucketName: ado-serverless-web-assets-${opt:region, 'us-east-1'}-${self:provider.stage}
+  s3Sync:
+    buckets:
+    - bucketName: ${self:custom.s3BucketName}
+      bucketPrefix: _next/static/
+      localDir: .next/static/
+      deleteRemoved: true
+      acl: public-read
+
+    - bucketName: ${self:custom.s3BucketName}
+      bucketPrefix: public/
+      localDir: public/
+      deleteRemoved: true
+      acl: public-read
+
+package: 
+  individually: true 
+
+plugins:
+ - serverless-offline
+ - serverless-s3-sync
+
+functions:
+ nextJsApp:
+    handler: ./serverless/index.handler
+    package:
+      patterns:
+        - '!./**'
+        - 'serverless/**'
+        - '!serverless/build.js'
+    events:
+      - http:
+          path: /
+          method: ANY
+      - http:
+          path: /{any+}
+          method: GET
+ 
