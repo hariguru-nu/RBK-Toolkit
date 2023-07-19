@@ -1,34 +1,34 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
 import styles from "./styles.module.scss";
 import Logo from "@Assets/images/logo.png";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Login = () => {
-  const [inputs, setInputs] = useState({
+  const [values, setValues] = useState({
     username: "",
-    password: "",
+    password: ""
   });
 
-  const [submitted, setSubmitted] = useState(false);
+  const { username, password } = values;
 
-//   const dispatch = useDispatch();
+  const router = useRouter();
 
-  const { username, password } = inputs;
-
-  //handle user input value
-  function handleChange(e) {
-    const { name, value } = e.target;
-    setInputs((inputs) => ({ ...inputs, [name]: value }));
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setValues((prevValues) => {
+      return {
+        ...prevValues,
+        [name] : value
+      }
+    })
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    setSubmitted(true);
-
-    if (username && password) {
-      //dispatch action
-    //   dispatch(login(username, password));
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if(username && password) {
+      router.push('/home');
     }
   }
 
@@ -38,14 +38,14 @@ const Login = () => {
         <div className={`${styles.loginForm} ${styles.formAddress}`}>
           <h2 className={styles.formTitle}>Reebok Toolkit</h2>
           <div className={styles.logo}>
-            <Image className={styles.logo} src={Logo} alt="logo" />
+            <Image className={styles.logo} src={Logo} alt="img" />
           </div>
           <div className={styles.formName}>
             <span className={styles.formSpan}>
               Hey, Enter your details to get sign in to your account
             </span>
           </div>
-          <form className={styles.signinForm}>
+          <form className={styles.signinForm} onSubmit={handleSubmit}>
             <label className={styles.formLabel}>EMAIL ADDRESS</label>
             <input
               type="email"
