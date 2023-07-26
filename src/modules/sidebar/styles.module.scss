@@ -1,0 +1,29 @@
+.navIcon {
+  margin-left: 20px;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  font-size: 28px;
+  color: #fff;
+}
+
+.sidebarNav {
+  background-color: #15171c;
+  width: 240px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  transition: 350ms;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.sidebarMenu {
+   width: 60px;
+}
+
+.sidebarWrap {
+  width: 100%;
+}
