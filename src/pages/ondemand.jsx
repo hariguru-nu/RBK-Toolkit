@@ -1,10 +1,12 @@
+import Layout from '@Modules/layout';
+import Table from '@Modules/table';
 import React from 'react'
 
 const OnDemand = () => {
   return (
-    <div>
-      On Demand
-    </div>
+    <Layout>
+      <Table />
+    </Layout>
   )
 }
 

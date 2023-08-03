@@ -28,7 +28,7 @@ const Login = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if(username && password) {
-      router.push('/layout');
+      router.push('/userlist');
     }
   }
 
