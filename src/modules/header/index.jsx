@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import RbkLogo from "@Assets/images/logo.png";
-import Tooltip from "@mui/material/Tooltip";
-import IconButton from "@mui/material/IconButton"
+import StyledTooltip from "@Components/Tooltip";
+import IconButton from "@mui/material/IconButton";
 import { FaLock, FaUser } from "react-icons/fa";
+import Link from "next/link";
 
 const Header = () => {
+  const [card, setCard] = useState(false);
+
+  const handleClick = () => {
+    setCard(!card);
+  };
+
+  const renderComponent = () => {
+    return (
+      <div className={styles.card}>
+        <ul className={styles.list}>
+          <li>
+            <Link href="/" className={styles.logout}>
+              <a>Logout</a>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    );
+  };
+
   return (
     <div className={styles.header}>
       <div className={styles.navLogo}>
@@ -20,17 +41,18 @@ const Header = () => {
         <h3>Reebok Toolkit</h3>
       </div>
       <div className={styles.navAccount}>
-        <Tooltip title="Access Account" placement="top">
+        <StyledTooltip title="Edit Access" placement="top">
           <IconButton className={styles.iconButton}>
-            <FaLock />
+            <FaLock className={styles.falock} />
           </IconButton>
-        </Tooltip>
-        <Tooltip title="Account" placement="top">
+        </StyledTooltip>
+        <StyledTooltip title="Account" placement="top">
           <IconButton className={styles.iconButton}>
-            <FaUser />
+            <FaUser className={styles.falock} onClick={handleClick} />
           </IconButton>
-        </Tooltip>
+        </StyledTooltip>
       </div>
+      {card && renderComponent()}
     </div>
   );
 };

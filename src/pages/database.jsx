@@ -1,10 +1,13 @@
-import React from 'react'
+import Layout from '@Modules/layout';
+import React from 'react';
+import UserList from '@Modules/userlist';
 
 const Database = () => {
   return (
-    <div>
-      Database
-    </div>
+    <Layout>
+      <UserList />
+    </Layout>
+    
   )
 }
 

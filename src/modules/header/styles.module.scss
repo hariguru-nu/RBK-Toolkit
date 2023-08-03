@@ -3,7 +3,7 @@
   justify-content: flex-end;
   align-items: center;
   background-color: #15171c;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
   margin: 0 6px;
   z-index: 1;
@@ -30,7 +30,33 @@
   gap: 20px;
 }
 
-.iconButton {
+
+.falock {
   color: #fff;
-  padding: 0;
 } 
+
+.iconButton:hover {
+  background-color: #A2B4C8;
+}
+
+.card{
+  position: absolute;
+  top:70px; 
+  right: 15px;
+  background-color: rgb(47, 79, 79);
+  z-index: 5;
+  border-radius: 8px;
+  color: #fff;
+  padding: 6px;
+}
+
+.list {
+  margin: 0 auto;
+  padding: 4px;
+  list-style: none;
+}
+
+.logout {
+  text-decoration: none;
+  color: #fff;
+}
