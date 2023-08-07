@@ -6,26 +6,53 @@ import StyledTooltip from "@Components/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import { FaLock, FaUser } from "react-icons/fa";
 import Link from "next/link";
+import ViewAccountModal from "@Modules/Account/viewAccount/ViewAccountModal";
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import { useRouter} from "next/router";
 
 const Header = () => {
   const [card, setCard] = useState(false);
+  const [ViewAccount, setViewAccount] = useState(false);
+  const [open, setOpen] = React.useState(false);
 
-  const handleClick = () => {
-    setCard(!card);
+  const router = useRouter();
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    router.push('/');
   };
 
-  const renderComponent = () => {
-    return (
-      <div className={styles.card}>
-        <ul className={styles.list}>
-          <li>
-            <Link href="/" className={styles.logout}>
-              <a>Logout</a>
-            </Link>
-          </li>
-        </ul>
-      </div>
-    );
+  // const handleClick = () => {
+  //   setCard(!card);
+  // };
+
+  // const renderComponent = () => {
+  //   return (
+  //     <div className={styles.card}>
+  //       <ul className={styles.list}>
+  //         <li>
+  //           <Link href="/" className={styles.logout}>
+  //             <a>Logout</a>
+  //           </Link>
+  //         </li>
+  //       </ul>
+  //     </div>
+  //   );
+  // };
+  const style = {
+    position: 'absolute',
+    top: '20%',
+    right: ' -8%',
+    transform: 'translate(-50%, -50%)',
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    padding: "10px",
+    fontSize: "12px"
   };
 
   return (
@@ -48,11 +75,21 @@ const Header = () => {
         </StyledTooltip>
         <StyledTooltip title="Account" placement="top">
           <IconButton className={styles.iconButton}>
-            <FaUser className={styles.falock} onClick={handleClick} />
+            <FaUser className={styles.falock} onClick={handleOpen} />
           </IconButton>
         </StyledTooltip>
       </div>
-      {card && renderComponent()}
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="child-modal-title"
+        aria-describedby="child-modal-description"
+      >
+        <Box sx={{ ...style, width: 300 }}>
+          <h2>hgurubalan@gmail.com</h2>
+          <Button onClick={handleClose}>Logout</Button>
+        </Box>
+      </Modal>
     </div>
   );
 };

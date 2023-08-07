@@ -27,8 +27,10 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if(username && password) {
+    if(username === "hgurubalan@gmail.com" && password === "harish@02") {
       router.push('/userlist');
+    } else {
+      console.error("enter a correct address");
     }
   }
 

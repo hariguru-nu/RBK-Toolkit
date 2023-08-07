@@ -34,13 +34,13 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Order Demand',
-        path: '/reports/orderdemand',
+        path: '/reports',
         icon: <BiSolidReport />,
         cName: 'sub-nav'
       },
       {
         title: 'Omni Demand',
-        path: '/reports/omnidemand',
+        path: '/reports',
         icon: <BiSolidReport />,
         cName: 'sub-nav'
       },
