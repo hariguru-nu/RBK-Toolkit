@@ -39,7 +39,7 @@ const Table = () => {
       _id: {
         $oid: "641b8a6e2f44714ed17a806e",
       },
-      storeCode: "E0035",
+      storeCode: "RB0035",
       address: {
         addressLine1: "1 American Dream Way",
         addressLine2: "Suite B237",
@@ -66,7 +66,7 @@ const Table = () => {
       },
       phoneNumber: "+15512484932",
       storeName: "American Dream",
-      storeType: "Eddie Bauer",
+      storeType: "REEBOK",
       updatedAt: {
         $date: "2023-03-22T23:29:10.926Z",
       },
@@ -75,7 +75,7 @@ const Table = () => {
       _id: {
         $oid: "641b8a6e2f44714ed17a806f",
       },
-      storeCode: "E0036",
+      storeCode: "RB0036",
       address: {
         addressLine1: "2801 W.Big Beaver Road",
         addressLine2: "Space K256",
@@ -103,7 +103,7 @@ const Table = () => {
       },
       phoneNumber: "+12486492662",
       storeName: "Somerset Collection",
-      storeType: "Eddie Bauer",
+      storeType: "REEBOK",
       updatedAt: {
         $date: "2023-03-22T23:29:10.926Z",
       },
@@ -112,7 +112,7 @@ const Table = () => {
       _id: {
         $oid: "641b8a6e2f44714ed17a8072",
       },
-      storeCode: "E0039",
+      storeCode: "RB0039",
       address: {
         addressLine1: "101 Hawthorn Center",
         city: "Vernon Hills",
@@ -139,7 +139,7 @@ const Table = () => {
       },
       phoneNumber: "+18476808607",
       storeName: "Hawthorn Mall",
-      storeType: "Eddie Bauer",
+      storeType: "REEBOK",
       updatedAt: {
         $date: "2023-03-22T23:29:10.926Z",
       },
@@ -148,7 +148,7 @@ const Table = () => {
       _id: {
         $oid: "641b8a6e2f44714ed17a8076",
       },
-      storeCode: "E0438",
+      storeCode: "RB0438",
       address: {
         addressLine1: "800 Steven B. Tanger Blvd",
         addressLine2: "Ste 809",
@@ -176,7 +176,7 @@ const Table = () => {
       },
       phoneNumber: "+17063353281",
       storeName: "Tanger Commerce II",
-      storeType: "Eddie Bauer Outlet",
+      storeType: "REEBOK",
       updatedAt: {
         $date: "2023-03-22T23:29:10.926Z",
       },
@@ -185,7 +185,7 @@ const Table = () => {
       _id: {
         $oid: "641b8a6e2f44714ed17a8074",
       },
-      storeCode: "E0737",
+      storeCode: "RB0737",
       address: {
         addressLine1: "595 West Linmar Lane",
         addressLine2: "Ste B-40",
@@ -213,7 +213,7 @@ const Table = () => {
       },
       phoneNumber: "+19206994145",
       storeName: "Johnson Creek Premium Outlets",
-      storeType: "Eddie Bauer Outlet",
+      storeType: "REEBOK",
       updatedAt: {
         $date: "2023-03-22T23:29:10.926Z",
       },
@@ -222,7 +222,7 @@ const Table = () => {
       _id: {
         $oid: "641b8a6e2f44714ed17a807a",
       },
-      storeCode: "E0518",
+      storeCode: "RB0518",
       address: {
         addressLine1: "4802 Valley View Blvd",
         addressLine2: "Ste LB50",
@@ -250,7 +250,7 @@ const Table = () => {
       },
       phoneNumber: "+15403666911",
       storeName: "Valley View Mall",
-      storeType: "Eddie Bauer",
+      storeType: "REEBOK",
       updatedAt: {
         $date: "2023-03-22T23:29:10.926Z",
       },
@@ -259,7 +259,7 @@ const Table = () => {
       _id: {
         $oid: "641b8a6e2f44714ed17a807c",
       },
-      storeCode: "E0042",
+      storeCode: "RB0042",
       address: {
         addressLine1: "27688 Novi Road",
         addressLine2: "A-203",
@@ -287,7 +287,7 @@ const Table = () => {
       },
       phoneNumber: "+12483484411",
       storeName: "Twelve Oaks Mall",
-      storeType: "Eddie Bauer",
+      storeType: "REEBOK",
       updatedAt: {
         $date: "2023-03-22T23:29:10.926Z",
       },
@@ -296,7 +296,7 @@ const Table = () => {
       _id: {
         $oid: "641b8a6e2f44714ed17a8077",
       },
-      storeCode: "E0040",
+      storeCode: "RB0040",
       address: {
         addressLine1: "12715 Wayzata Blvd.",
         addressLine2: "Space A",
@@ -324,7 +324,7 @@ const Table = () => {
       },
       phoneNumber: "+19525939111",
       storeName: "Ridgedale Center",
-      storeType: "Eddie Bauer",
+      storeType: "REEBOK",
       updatedAt: {
         $date: "2023-03-22T23:29:10.926Z",
       },
@@ -333,7 +333,7 @@ const Table = () => {
       _id: {
         $oid: "641b8a6e2f44714ed17a807e",
       },
-      storeCode: "E0443",
+      storeCode: "RB0443",
       address: {
         addressLine1: "Southgate Mall",
         addressLine2: "Sp J2",
@@ -361,7 +361,7 @@ const Table = () => {
       },
       phoneNumber: "+14065422244",
       storeName: "Southgate Mall",
-      storeType: "Eddie Bauer",
+      storeType: "REEBOK",
       updatedAt: {
         $date: "2023-03-22T23:29:10.926Z",
       },
@@ -370,7 +370,7 @@ const Table = () => {
       _id: {
         $oid: "641b8a6e2f44714ed17a8080",
       },
-      storeCode: "E0044",
+      storeCode: "RB0044",
       address: {
         addressLine1: "6750 W Frontage Rd.",
         addressLine2: "Suite 321",
@@ -398,7 +398,7 @@ const Table = () => {
       },
       phoneNumber: "+15074465866",
       storeName: "Medford Outlet Center",
-      storeType: "Eddie Bauer Outlet",
+      storeType: "REEBOK",
       updatedAt: {
         $date: "2023-03-22T23:29:10.926Z",
       },
@@ -407,7 +407,7 @@ const Table = () => {
       _id: {
         $oid: "641b8a6e2f44714ed17a8084",
       },
-      storeCode: "E0055",
+      storeCode: "RB0055",
       address: {
         addressLine1: "11715-U Fair Oaks Mall",
         addressLine2: "Sp J225",
@@ -435,7 +435,7 @@ const Table = () => {
       },
       phoneNumber: "+17032737728",
       storeName: "Fair Oaks Mall",
-      storeType: "Eddie Bauer",
+      storeType: "REEBOK",
       updatedAt: {
         $date: "2023-03-22T23:29:10.926Z",
       },
@@ -444,7 +444,7 @@ const Table = () => {
       _id: {
         $oid: "641b8a6e2f44714ed17a8084",
       },
-      storeCode: "R00393",
+      storeCode: "RB0393",
       enabled: true,
       phoneNumber: "+1872372378",
       storeName: "Reebok store",
