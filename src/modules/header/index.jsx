@@ -5,8 +5,6 @@ import RbkLogo from "@Assets/images/logo.png";
 import StyledTooltip from "@Components/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import { FaLock, FaUser } from "react-icons/fa";
-import Link from "next/link";
-import ViewAccountModal from "@Modules/Account/viewAccount/ViewAccountModal";
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
