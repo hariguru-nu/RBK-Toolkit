@@ -71,7 +71,7 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Lambda Actions',
-        path: '/aws/lambdaaction',
+        path: '/aws',
         icon: <FaAws />
       },
     ]
