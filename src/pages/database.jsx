@@ -1,11 +1,11 @@
+import DatabaseComponent from '@Modules/database';
 import Layout from '@Modules/layout';
 import React from 'react';
-import UserList from '@Modules/userlist';
 
 const Database = () => {
   return (
     <Layout>
-      <UserList />
+      <DatabaseComponent />
     </Layout>
     
   )
