@@ -46,7 +46,7 @@ export const SidebarData = [
       },
       {
         title: 'Order Report',
-        path: '/reports/orderreport',
+        path: '/reports',
         icon: <BiSolidReport />
       }
     ]
