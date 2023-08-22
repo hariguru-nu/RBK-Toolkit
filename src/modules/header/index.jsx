@@ -23,6 +23,9 @@ const Header = () => {
   const handleClose = () => {
     router.push('/');
   };
+  const openDatabase = () => {
+    router.push('/database');
+  }
 
   // const handleClick = () => {
   //   setCard(!card);
@@ -68,7 +71,7 @@ const Header = () => {
       <div className={styles.navAccount}>
         <StyledTooltip title="Edit Access" placement="top">
           <IconButton className={styles.iconButton}>
-            <FaLock className={styles.falock} />
+            <FaLock className={styles.falock} onClick={openDatabase}/>
           </IconButton>
         </StyledTooltip>
         <StyledTooltip title="Account" placement="top">
