@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 import styles from "./styles.module.scss";
 import Logo from "@Assets/images/logo.png";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const [values, setValues] = useState({
@@ -28,9 +30,10 @@ const Login = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if(username === "hgurubalan@gmail.com" && password === "harish@02") {
+      toast.success("LoggedIn Successful");
       router.push('/userlist');
     } else {
-      console.error("enter a correct address");
+      toast.warning("Incorrect Credentials");
     }
   }
 
@@ -75,6 +78,7 @@ const Login = () => {
               Log In
             </button>
           </form>
+          <ToastContainer />
         </div>
       </div>
     </div>
