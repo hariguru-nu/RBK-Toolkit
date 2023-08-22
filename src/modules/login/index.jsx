@@ -29,7 +29,7 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if(username === "hgurubalan@gmail.com" && password === "harish@02") {
+    if(username === "guru.prasad@sparc.com" && password === "guru@sparc") {
       toast.success("LoggedIn Successful");
       router.push('/userlist');
     } else {
